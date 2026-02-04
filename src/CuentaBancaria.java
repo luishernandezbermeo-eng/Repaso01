@@ -8,12 +8,31 @@ public class CuentaBancaria
         this.saldo = saldoInicial;
     }
 
-
     public String getId( ) {
         return id;
     }
     public int getSaldo ( ){
         return saldo;
+    }
+
+    public void consignar ( int valorAConsignar) {
+        if ( valorAConsignar <= 0) {
+            throw new IllegalArgumentException(" el valor no es valido");
+        }
+        this.saldo += valorAConsignar;
+
+
+        public void retirar ( int valorARetirar) {
+            if ( valorARetirar <= 0 ) {
+                throw new IllegalArgumentException( " El valor no es valido");
+            }
+
+        }
+            if ( valorARetirar > saldo) {
+                throw new IllegalStateException("El valor no se puede retirar ");
+        }
+            this.saldo -= valorARetirar;
+
     }
 
 
