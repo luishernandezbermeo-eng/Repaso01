@@ -8,4 +8,30 @@ public class NotificacionCorreo extends Notificacion {
         System.out.println("correo : " mensaje + " a : " + receptorNotificacion);
 
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
